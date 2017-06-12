@@ -55,7 +55,7 @@ for line in file:
 		assignments.append(getAssignment(line.rstrip().replace("\"", "")))
 	elif re.search("kinetic function", line):
 		kinetics.append(getKinetics(line.rstrip().replace("\"", "")))
-	elif re.search("dt", line):
+	elif re.search("d/dt", line):
 		equations.append(getEquation(line.rstrip().replace("\"", "")))
 		
 equations = replaceODEs(equations, kinetics)
