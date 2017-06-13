@@ -18,7 +18,7 @@ def improveExpressionReadability(expression):
 	expression = " + ".join(expression)
 
 	expression = expression.split("-")
-	expression = " + ".join(expression)
+	expression = " - ".join(expression)
 	return expression
 
 def getEquation(line):
